@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Request as Req;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Carbon;
 use App\Http\Controllers\AmoCRMController;
@@ -18,19 +17,13 @@ class AdminController extends Controller
 
         try
         {
-            $req = new Req;
-            $req->name = $request->name;
-            $req->phone = $request->phone;
-            $req->email = $request->email;
-            $req->save();
-
             $amoCRMIntegrity = new AmoCRMController;
 
             $lead_id = $amoCRMIntegrity->add_lead([
-                'NAME' => $req->name,
-                'PHONE' => $req->phone,
-                'EMAIL' => $req->email,
-                'LEAD_NAME' => $req->phone.'. Заявка с сайта YOURSITE.COM',
+                'NAME' => $request->name,
+                'PHONE' => $request->phone,
+                'EMAIL' => $request->email,
+                'LEAD_NAME' => $request->phone.'. Заявка с сайта YOURSITE.COM',
                 'PIPELINEID' => 1, // Укажите здесь ваш ID 'Воронки', в которую должен упасть лид
             ]);
         }
