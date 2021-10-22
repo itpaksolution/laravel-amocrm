@@ -2,7 +2,7 @@
 Решение для интеграции AmoCRM в ваше приложение
 
 # Внимание!
-## Перед использованием установите amocrm-api-php в ваш проект! Он должен быть установлен до получение токена! [amocrm-api-php](https://github.com/amocrm/amocrm-api-php)
+## Перед использованием установите amocrm-api-php в ваш проект! Он должен быть установлен до получения токена! [amocrm-api-php](https://github.com/amocrm/amocrm-api-php)
 
 Пример регистрации лида в AmoCRM из приложения Laravel
 
