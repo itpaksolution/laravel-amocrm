@@ -2,7 +2,7 @@
 Solved AMOCRM integration for laravel
 
 # Warning!
-## Before usage install! It should be installed before getting token [amocrm-api-php](https://github.com/amocrm/amocrm-api-php)
+## Before usage install amocrm-api-php to your project! It should be installed before getting token [amocrm-api-php](https://github.com/amocrm/amocrm-api-php)
 
 Just an example of easy leads inserts and OAuth 2.0 auth for AMOCRM using Laravel
 
